@@ -1,0 +1,480 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Super Market an Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'css6/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css6/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="{% static 'css6/font-awesome.css' %}" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="{% static 'js6/jquery-1.11.1.min.js' %}"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{% static 'js6/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'js6/easing.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+<!-- header -->
+<div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+        <li class="hover-effect"><a href="{% url 'index' %}">Home</a></li>
+        <li class="hover-effect"><a href="{% url 'about' %}">About</a></li>
+        <li class="hover-effect"><a href="{% url 'games' %}">Games</a></li>
+        <li class="hover-effect"><a href="{% url 'news' %}">News</a></li>
+        <li class="hover-effect"><a href="{% url 'contact' %}">Contact</a></li>
+        <li class="hover-effect"><a href="{% url 'login' %}">LogIn</a></li>
+        <li class="hover-effect"><a href="{% url 'logout' %}">LogOut</a></li>
+    </ul>
+</div>
+									
+<!-- //navigation -->	
+	<!-- top-brands -->
+	<div class="top-brands">
+		<div class="container">
+		<h2>ONLINE GAME OFFERS</h2>
+			<div class="grid_3 grid_5">
+				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#expeditions" id="expeditions-tab" role="tab" data-toggle="tab" aria-controls="expeditions" aria-expanded="true">Advertised offers</a></li>
+						<li role="presentation"><a href="#tours" role="tab" id="tours-tab" data-toggle="tab" aria-controls="tours">Today Offers</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="expeditions" aria-labelledby="expeditions-tab">
+							
+							<div class="agile_top_brands_grids">
+								<div class="col-md-4 top_brand_left">
+									<div class="hover14 column">
+										<div class="agile_top_brand_left_grid">
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid1">
+												<figure>
+													<div class="snipcart-item block" >
+														<div class="snipcart-thumb">
+															<a href="#"><img title=" " alt=" " src="{% static 'images6/a1.jpg' %}" /></a>		
+															<p>TEMPLE RUN</p>
+					
+															<h4>$20.00 <span>$35.00</span></h4>
+														</div>
+														<div class="snipcart-details top_brand_home_details">
+															<form action="{% url 'onlinegame' %}" method="POST">
+																{% csrf_token %}
+																{{msg}}
+																<fieldset>
+							
+																	<input type="submit" name="submit" value="Purchase Game" href="#" class="button" />
+																</fieldset>
+															</form>
+														</div>
+													</div>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 top_brand_left">
+									<div class="hover14 column">
+										<div class="agile_top_brand_left_grid">
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid1">
+												<figure>
+													<div class="snipcart-item block" >
+														<div class="snipcart-thumb">
+															<a href="#"><img title=" " alt=" " src="{% static 'images6/a2.jpg' %}" /></a>		
+															<p>SUBWAY SAFAR</p>
+														
+															<h4>$50.99 <span>$60.00</span></h4>
+														</div>
+														<div class="snipcart-details top_brand_home_details">
+															<form action="#" method="post">
+																<fieldset>
+																	
+																	<input type="submit" name="submit" value="Purchase Game" class="button" />
+																</fieldset>
+															</form>
+														</div>
+													</div>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 top_brand_left">
+									<div class="hover14 column">
+										<div class="agile_top_brand_left_grid">
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid1">
+												<figure>
+													<div class="snipcart-item block">
+														<div class="snipcart-thumb">
+															<a href="#"><img src="{% static 'images6/a3.jpg' %}" alt=" " class="img-responsive" /></a>
+															<p>COCO MEN </p>
+										
+															<h4>$40.99 <span>$65.00</span></h4>
+														</div>
+														<div class="snipcart-details top_brand_home_details">
+															<form action="#" method="post">
+																<fieldset>
+																	
+																	<input type="submit" name="submit" value="Purchase Game" class="button" />
+																</fieldset>
+															</form>
+														</div>
+													</div>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="agile_top_brands_grids">
+								<div class="col-md-4 top_brand_left">
+									<div class="hover14 column">
+										<div class="agile_top_brand_left_grid">
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid1">
+												<figure>
+													<div class="snipcart-item block" >
+														<div class="snipcart-thumb">
+															<a href="#"><img title=" " alt=" " src="{% static 'images6/a4.jpg' %}" /></a>		
+															<p>SPIDERMAN</p>
+												
+															<h4>$35.99 <span>$55.00</span></h4>
+														</div>
+														<div class="snipcart-details top_brand_home_details">
+															<form action="#" method="post">
+																<fieldset>
+
+																	<input type="submit" name="submit" value="Purchase Game" class="button" />
+																</fieldset>
+															</form>
+														</div>
+													</div>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 top_brand_left">
+									<div class="hover14 column">
+										<div class="agile_top_brand_left_grid">
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid1">
+												<figure>
+													<div class="snipcart-item block" >
+														<div class="snipcart-thumb">
+															<a href="#"><img title=" " alt=" " src="{% static 'images6/a6.jpg' %}" /></a>		
+															<p>SPIDERMAN 2</p>
+													
+															<h4>$30.99 <span>$45.00</span></h4>
+														</div>
+														<div class="snipcart-details top_brand_home_details">
+															<form action="#" method="post">
+																<fieldset>
+
+																	<input type="submit" name="submit" value="Purchase Game" class="button" />
+																</fieldset>
+															</form>
+														</div>
+													</div>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 top_brand_left">
+									<div class="hover14 column">
+										<div class="agile_top_brand_left_grid">
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid1">
+												<figure>
+													<div class="snipcart-item block">
+														<div class="snipcart-thumb">
+															<a href="#"><img src="{% static 'images6/a7.jpg' %}" alt=" " class="img-responsive" /></a>
+															<p>CAR DRIVE</p>
+															
+															<h4>$80.99 <span>$105.00</span></h4>
+														</div>
+														<div class="snipcart-details top_brand_home_details">
+															<form action="#" method="post">
+																<fieldset>
+																	
+																	<input type="submit" name="submit" value="Purchase Game" class="button" />
+																</fieldset>
+															</form>
+														</div>
+													</div>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tours" aria-labelledby="tours-tab">
+
+							<div class="agile_top_brands_grids">
+								<div class="col-md-4 top_brand_left">
+									<div class="hover14 column">
+										<div class="agile_top_brand_left_grid">
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid1">
+												<figure>
+													<div class="snipcart-item block" >
+														<div class="snipcart-thumb">
+															<a href="#"><img title=" " alt=" " src="{% static 'images6/a1.jpg' %}" /></a>		
+															<p>ABC</p>
+															
+															<h4>$35.99 <span>$55.00</span></h4>
+														</div>
+														<div class="snipcart-details top_brand_home_details">
+															<form action="#" method="post">
+																<fieldset>
+																	
+																	<input type="submit" name="submit" value="Purchase Game" class="button" />
+																</fieldset>
+															</form>
+														</div>
+													</div>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 top_brand_left">
+									<div class="hover14 column">
+										<div class="agile_top_brand_left_grid">
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid1">
+												<figure>
+													<div class="snipcart-item block" >
+														<div class="snipcart-thumb">
+															<a href="#"><img title=" " alt=" " src="{% static 'images6/a7.jpg' %}" /></a>		
+															<p>EFB</p>
+														
+															<h4>$30.99 <span>$45.00</span></h4>
+														</div>
+														<div class="snipcart-details top_brand_home_details">
+															<form action="#" method="post">
+																<fieldset>
+																	
+																	<input type="submit" name="submit" value="Purchase Game" class="button" />
+																</fieldset>
+															</form>
+														</div>
+													</div>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 top_brand_left">
+									<div class="hover14 column">
+										<div class="agile_top_brand_left_grid">
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid_pos">
+												<img src="{% static 'images6/offer.png' %}" alt=" " class="img-responsive" />
+											</div>
+											<div class="agile_top_brand_left_grid1">
+												<figure>
+													<div class="snipcart-item block">
+														<div class="snipcart-thumb">
+															<a href="#"><img src="{% static 'images6/a3.jpg' %}" alt=" " class="img-responsive" /></a>
+															<p>XYZ</p>
+															
+															<h4>$80.99 <span>$105.00</span></h4>
+														</div>
+														<div class="snipcart-details top_brand_home_details">
+															<form action="#" method="post">
+																<fieldset>
+																	
+																	<input type="submit" name="submit" value="Purchase Game" class="button" />
+																</fieldset>
+															</form>
+														</div>
+													</div>
+												</figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //top-brands -->
+ <!-- Carousel
+    ================================================== -->
+    
+<!--banner-bottom-->
+				
+							
+<!--banner-bottom-->
+<!--brands-->
+	
+				
+			
+				
+<!--//brands-->
+<!-- new -->
+	
+<!-- //new -->
+<!-- //footer -->
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 footer-left-w3">
+			<h4>Contact</h4>
+			<ul>
+				<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></li>
+				<li><a href="mailto:example@mail.com"><h6>ex@mail.com</h6></a></li>
+			</ul>
+			<ul>
+				<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
+				<li><h6>+18045678834</h6></li>
+			</ul>
+			<ul>
+				<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></li>
+				<li><h6>4th Avenue,London</h6></li>
+			</ul>
+			<ul>
+				<li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span></li>
+				<li><h6>(0033)6544 5453 644</h6></li>
+			</ul>
+		</div>
+		<div class="col-md-5 footer-middle-w3">
+			<h4>Latest Games</h4>
+			<div class="col-md-3 img-w3-agile">
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng1.jpg' %}" alt=" " /></a>
+			</div>
+			<div class="col-md-3 img-w3-agile">
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng2.jpg' %}" alt=" " /></a>
+			</div>
+			<div class="col-md-3 img-w3-agile">
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng3.jpg' %}" alt=" " /></a>
+			</div>
+			<div class="col-md-3 img-w3-agile">
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng4.jpg' %}" alt=" " /></a>
+			</div>
+			<div class="col-md-3 img-w3-agile footer-middle-wthree">
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng5.jpg' %}" alt=" " /></a>
+			</div>
+			<div class="col-md-3 img-w3-agile footer-middle-wthree">
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng6.jpg' %}" alt=" " /></a>
+			</div>
+			<div class="col-md-3 img-w3-agile footer-middle-wthree">
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng7.jpg' %}" alt=" " /></a>
+			</div>
+			<div class="col-md-3 img-w3-agile footer-middle-wthree">
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng8.jpg' %}" alt=" " /></a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 footer-right-w3">
+			<a href="index.html"><h4>Kids <img src="{% static 'images/f1.png' %}" alt=" " /> Game</h4></a>
+			<p>Donec lobortis diam eu auctor porta. Phasellus in elementum tortor, sit amet imperdiet urna pellentesque non risus porta.</p>
+			<p class="agileinfo">Suspendisse convallis malesuada libero, non rutrum arcu pellentesque lacinia.</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="copyright">
+			<!-- <p>&copy; 2020 Kids Video Game. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank"> W3layouts </a></p> -->
+		</div>
+	</div>
+</div>
+<!-- //footer -->	
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static 'js6/bootstrap.min.js' %}"></script>
+
+<!-- top-header and slider -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+<script src="{% static 'js6/minicart.min.js' %}"></script>
+<script>
+	// Mini Cart
+	paypal.minicart.render({
+		action: '#'
+	});
+
+	if (~window.location.search.indexOf('reset=true')) {
+		paypal.minicart.reset();
+	}
+</script>
+<!-- main slider-banner -->
+<script src="{% static 'js6/skdslider.min.js' %}"></script>
+<link href="{% static 'css6/skdslider.css' %}" rel="stylesheet">
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
+						
+			jQuery('#responsive').change(function(){
+			  $('#responsive_wrapper').width(jQuery(this).val());
+			});
+			
+		});
+</script>	
+<!-- //main slider-banner --> 
+</body>
+</html>

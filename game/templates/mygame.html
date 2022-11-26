@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kids Video Game a Games Category Flat Bootstrap responsive Website Template | Games:: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Kids Video Game Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- css -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/popup-box.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />	
+<!--// css -->
+<!-- font -->
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+</head>
+<body> 
+<!-- banner -->
+<div class="sub-banner">
+		<!-- Navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a  href="index.html"><h1>Kids <img src="{% static 'images/c1.png' %}" alt=" " /> Game</h1></a>
+				</div>
+
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hover-effect"><a href="{% url 'index' %}">Home</a></li>
+						<li class="hover-effect"><a href="{% url 'about' %}">About</a></li>
+						<li class="hover-effect active"><a href="{% url 'games' %}">Games</a></li>
+						<li class="hover-effect"><a href="{% url 'news' %}">News</a></li>
+						<li class="hover-effect"><a href="{% url 'contact' %}">Contact</a></li>
+						<li class="hover-effect"><a href="{% url 'login' %}">LogIn</a></li>
+						<li class="hover-effect"><a href="{% url 'logout' %}">LogOut</a></li>
+
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+</div>
+<div class ="game" style="color: rgb(10, 222, 77);">
+<h3 >USER POST GAME</h3>
+</div>
+{% for single_game in game %}
+<div class="col-lg-12">
+    <!-- <h2>Total Donation : 50k USD</h2> -->
+
+    
+    <div class="card shadow mb-4" style="border: 2px solid blue;">
+    
+    <!-- <div class="card shadow mb-4" style="border: 2px solid blue; background-color: black;"> -->
+
+ 
+        <!-- Card Header - Dropdown -->
+        <div
+            class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">{{single_game.title}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h6>
+            <!-- <h6 class="m-0 font-weight-bold text-primary">74 Million Dollars A Day &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <small>{% if blog.update %} Updated on : {{blog.update}} {% else %} Posted on : {{blog.date}} {% endif %}</small> </h6> -->
+            <div class="dropdown no-arrow">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400 text-success" style="color: black;"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                    aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Dropdown Header:</div>
+                    <a class="dropdown-item" href="#">Edit game</a>
+                    <a class="dropdown-item" href="#">Delete game</a>
+                    <div class="dropdown-divider"></div>
+                    
+                    <!-- <a class="dropdown-item" href="#">Hide Blog</a> -->
+                    
+                    <!-- <a class="dropdown-item" href="#">UnHide Blog</a> -->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+           {{single_game.user.name}} 
+        </div>
+        
+        <img src="{{single_game.pic.url}}" alt="" width="600px" height="200px">
+        
+        <br>
+    <p>{{single_game.description}}</p>
+
+    </div>
+    
+    
+</div>
+</from>
+{% endfor %}
+
+
+</body>
+</html>
+
+
+
+
+
+
