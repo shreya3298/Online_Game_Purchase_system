@@ -17,7 +17,8 @@ urlpatterns = [
     path('mygame/',views.mygame, name="mygame"),
     path('onlinegame/',views.onlinegame, name="onlinegame"),
     path('myprofile/',views.myprofile, name="myprofile"),
-    path('donate/<int:pk>', views.donate, name="donate"),
+    path('donate/', views.donate, name="donate"),
+    path('pay_success/', views.pay_success, name="pay_success"),
     path('donate/paymenthandler/', views.paymenthandler, name='paymenthandler'),
     
 

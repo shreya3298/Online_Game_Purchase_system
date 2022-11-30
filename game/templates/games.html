@@ -34,7 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a  href="index.html"><h1>Kids <img src="{% static 'images/c1.png' %}" alt=" " /> Game</h1></a>
+					<a  href="{% url 'index' %}"><h1>Kids <img src="{% static 'images/c1.png' %}" alt=" " /> Game</h1></a>
 				</div>
 
 				<div id="navbar" class="navbar-collapse collapse">
@@ -362,15 +362,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h4>Contact</h4>
 			<ul>
 				<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></li>
-				<li><a href="mailto:example@mail.com"><h6>ex@mail.com</h6></a></li>
+				<li><a href="mailto:example@mail.com"><h6>shreya3298@mail.com</h6></a></li>
 			</ul>
 			<ul>
 				<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
-				<li><h6>+18045678834</h6></li>
+				<li><h6>+91 9924547879</h6></li>
 			</ul>
 			<ul>
 				<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></li>
-				<li><h6>4th Avenue,London</h6></li>
+				<li><h6>Surat,Gujarat</h6></li>
 			</ul>
 			<ul>
 				<li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span></li>
@@ -380,33 +380,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-5 footer-middle-w3">
 			<h4>Latest Games</h4>
 			<div class="col-md-3 img-w3-agile">
-				<a href="single.html"><img src="{% static 'images/ng1.jpg' %}" alt=" " /></a>
+				<a href="{% static 'single' %}"><img src="{% static 'images/ng1.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile">
-				<a href="single.html"><img src="{% static 'images/ng2.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng2.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile">
-				<a href="single.html"><img src="{% static 'images/ng3.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng3.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile">
-				<a href="single.html"><img src="{% static 'images/ng4.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng4.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="single.html"><img src="{% static 'images/ng5.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng5.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="single.html"><img src="{% static 'images/ng6.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng6.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="single.html"><img src="{% static 'images/ng7.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng7.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="single.html"><img src="{% static 'images/ng8.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng8.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 		<div class="col-md-4 footer-right-w3">
-			<a href="index.html"><h4>Kids <img src="{% static 'images/f1.png' %}" alt=" " /> Game</h4></a>
+			<a href="{% url 'index' %}"><h4>Kids <img src="{% static 'images/f1.png' %}" alt=" " /> Game</h4></a>
 			<p>Donec lobortis diam eu auctor porta. Phasellus in elementum tortor, sit amet imperdiet urna pellentesque non risus porta.</p>
 			<p class="agileinfo">Suspendisse convallis malesuada libero, non rutrum arcu pellentesque lacinia.</p>
 		</div>

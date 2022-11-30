@@ -13,7 +13,9 @@ from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponseBadRequest
 
- 
+# authorize razorpay client with API Keys.
+razorpay_client = razorpay.Client(
+     auth=(settings.RAZOR_KEY_ID, settings.RAZOR_KEY_SECRET)) 
 
 # Create your views here.
 def index(request):
@@ -80,16 +82,15 @@ def viewgame(request):
     allgame = Addgame.objects.all()
     return render(request, 'viewgame.html', {'allgame':allgame })
 
-# authorize razorpay client with API Keys.
-razorpay_client = razorpay.Client(
-auth=(settings.RAZOR_KEY_ID, settings.RAZOR_KEY_SECRET))
 
-def donate(request,pk):
-     #payment
+
+def donate(request):
+    #payment
     #donation table row create
-    Addgame_object = Addgame.objects.get(id = pk)
+    #Addgame_object = Addgame.objects.get()
+    global amount
     currency = 'INR'
-    amount = 4500*100  # Rs. 200
+    amount = 50000 # Rs. 200
  
     # Create a Razorpay Order
     razorpay_order = razorpay_client.order.create(dict(amount=amount,currency=currency, payment_capture='0'))
@@ -106,7 +107,7 @@ def donate(request,pk):
     context['razorpay_amount'] = amount
     context['currency'] = currency
     context['callback_url'] = callback_url
-    context['single_game'] = Addgame_object
+    # context['single_game'] = Addgame_object
     return render(request, 'donate.html', context = context)
 
 
@@ -134,14 +135,15 @@ def paymenthandler(request):
             # result = razorpay_client.utility.verify_payment_signature(
             #     params_dict)
             # if result is not None:
-            amount = context['razorpay_amount']  # Rs. 200
+            global amount
+            amount = 50000  # Rs. 200
             try:
 
                 # capture the payemt
                 razorpay_client.payment.capture(payment_id, amount)
 
                 # render success page on successful caputre of payment
-                return render(request, 'paymentsuccess.html')
+                return render(request, 'pay_success.html')
             except:
 
                 # if there is an error while capturing payment.
@@ -256,7 +258,10 @@ def contact(request):
         return render(request,"onlinegame.html")
     
 def onlinegame(request):
-        return render(request,'donate.html')
+        return render(request,'onlinegame.html')
+
+def pay_success(request):
+    return render(request,'pay_success.html')
 
 
 

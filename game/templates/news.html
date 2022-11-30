@@ -33,7 +33,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a  href="index.html"><h1>Kids <img src="{% static 'images/c1.png' %}" alt=" " /> Game</h1></a>
+					<a  href="{% url 'index' %}"><h1>Kids <img src="{% static 'images/c1.png' %}" alt=" " /> Game</h1></a>
 				</div>
 
 				<div id="navbar" class="navbar-collapse collapse">
@@ -54,7 +54,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner -->
 <div class="events-w3layouts">
 	<h2>News</h2>
-	<a href="single.html"><div class="col-md-7 events-left-agile-agileits-w3layouts">
+	<a href="{% url 'single' %}"><div class="col-md-7 events-left-agile-agileits-w3layouts">
 		<div class="events-text-w3-agile events-text1">
 			<h4>June 20, 2020</h4>
 			<p>Phasellus faucibus semper eros, quis mauris </p>
@@ -65,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div></a>
 	<div class="col-md-5 events-right-agile">
-		<a href="single.html"><div class="events-right-top">
+		<a href="{% url 'single' %}"><div class="events-right-top">
 			<div class="events-text-w3-agile events-text2">
 				<h4>July 20, 2020</h4>
 				<p>Aenean imperdiet volutpat tortor </p>
@@ -75,7 +75,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 		</div></a>
-		<a href="single.html"><div class="events-right-bottom">
+		<a href="{% url 'single' %}"><div class="events-right-bottom">
 			<div class="events-text-w3-agile events-text2">
 				<h4>Aug 20, 2020</h4>
 				<p>Fusce aliquam purus  consectetur</p>
@@ -94,10 +94,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="container">
 	<div class="blog1-w3ls">
 		<div class="col-md-4 blog-image-w3l">
-			<a href="single.html"><img src="{% static 'images/ng1.jpg' %}" alt=" " /></a>
+			<a href="{% url 'single' %}"><img src="{% static 'images/ng1.jpg' %}" alt=" " /></a>
 		</div>
 		<div class="col-md-8 blog-text-w3ls">
-			<a href="single.html"><h4>Quisque in lectus erat</h4></a>
+			<a href="{% url 'single' %}"><h4>Quisque in lectus erat</h4></a>
 			<div class="item_info">
 					<ul>
 						<li><a href="#"><i class="glyphicon glyphicon-user"></i>Admin</a></li>
@@ -107,16 +107,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>				
 			 </div>
 			 <p>Aliquam suscipit neque massa, eu maximus felis gravida vel. Vestibulum lacinia risus risus, ut iaculis felis fermentum id. Cras at vulputate velit, vitae vestibulum augue. Etiam lorem nunc, mattis ac dignissim sit amet, varius et ex. Phasellus eleifend nibh justo, pulvinar cursus sapien commodo non.</p>
-			 <a href="single.html" class="blog-read" >Read More</a>
+			 <a href="{% url 'single' %}" class="blog-read" >Read More</a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
 	<div class="blog2-w3ls">
 		<div class="col-md-4 blog-image-w3l">
-			<a href="single.html"><img src="{% static 'images/ng2.jpg' %}" alt=" " /></a>
+			<a href="{% url 'single' %}"><img src="{% static 'images/ng2.jpg' %}" alt=" " /></a>
 		</div>
 		<div class="col-md-8 blog-text-w3ls">
-			<a href="single.html"><h4>In finibus vel metus</h4></a>
+			<a href="{% url 'single' %}"><h4>In finibus vel metus</h4></a>
 			<div class="item_info">
 					<ul>
 						<li><a href="#"><i class="glyphicon glyphicon-user"></i>Admin</a></li>
@@ -126,16 +126,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>				
 			 </div>
 			 <p>Aliquam suscipit neque massa, eu maximus felis gravida vel. Vestibulum lacinia risus risus, ut iaculis felis fermentum id. Cras at vulputate velit, vitae vestibulum augue. Etiam lorem nunc, mattis ac dignissim sit amet, varius et ex. Phasellus eleifend nibh justo, pulvinar cursus sapien commodo non.</p>
-			 <a href="single.html" class="blog-read" >Read More</a>
+			 <a href="{% url 'single' %}" class="blog-read" >Read More</a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
 	<div class="blog3-w3ls">
 		<div class="col-md-4 blog-image-w3l">
-			<a href="single.html"><img src="{% static 'images/ng3.jpg' %}" alt=" " /></a>
+			<a href="{% url 'single' %}"><img src="{% static 'images/ng3.jpg' %}" alt=" " /></a>
 		</div>
 		<div class="col-md-8 blog-text-w3ls">
-			<a href="single.html"><h4>Nam eget ligula eu</h4></a>
+			<a href="{% url 'single' %}"><h4>Nam eget ligula eu</h4></a>
 			<div class="item_info">
 					<ul>
 						<li><a href="#"><i class="glyphicon glyphicon-user"></i>Admin</a></li>
@@ -145,7 +145,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</ul>				
 			 </div>
 			 <p>Aliquam suscipit neque massa, eu maximus felis gravida vel. Vestibulum lacinia risus risus, ut iaculis felis fermentum id. Cras at vulputate velit, vitae vestibulum augue. Etiam lorem nunc, mattis ac dignissim sit amet, varius et ex. Phasellus eleifend nibh justo, pulvinar cursus sapien commodo non.</p>
-			 <a href="single.html" class="blog-read" >Read More</a>
+			 <a href="{% url 'single' %}" class="blog-read" >Read More</a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -177,33 +177,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-5 footer-middle-w3">
 			<h4>Latest Games</h4>
 			<div class="col-md-3 img-w3-agile">
-				<a href="single.html"><img src="{% static 'images/ng1.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng1.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile">
-				<a href="single.html"><img src="{% static 'images/ng2.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng2.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile">
-				<a href="single.html"><img src="{% static 'images/ng3.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng3.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile">
-				<a href="single.html"><img src="{% static 'images/ng4.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng4.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="single.html"><img src="{% static 'images/ng5.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng5.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="single.html"><img src="{% static 'images/ng6.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng6.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="single.html"><img src="{% static 'images/ng7.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng7.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="col-md-3 img-w3-agile footer-middle-wthree">
-				<a href="single.html"><img src="{% static 'images/ng8.jpg' %}" alt=" " /></a>
+				<a href="{% url 'single' %}"><img src="{% static 'images/ng8.jpg' %}" alt=" " /></a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 		<div class="col-md-4 footer-right-w3">
-			<a href="index.html"><h4>Kids <img src="i{% static 'mages/f1.png' %}" alt=" " /> Game</h4></a>
+			<a href="{% url 'index' %}"><h4>Kids <img src="i{% static 'mages/f1.png' %}" alt=" " /> Game</h4></a>
 			<p>Donec lobortis diam eu auctor porta. Phasellus in elementum tortor, sit amet imperdiet urna pellentesque non risus porta.</p>
 			<p class="agileinfo">Suspendisse convallis malesuada libero, non rutrum arcu pellentesque lacinia.</p>
 		</div>
